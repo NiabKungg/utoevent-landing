@@ -169,7 +169,6 @@ footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
 footer h4{color:#fff;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
 footer .flist{display:flex;flex-direction:column;gap:9px;font-size:.92rem}
 footer .flist a{display:inline-flex;align-items:center;gap:9px;font-weight:600}
-footer .flist a[href^="mailto"]{text-decoration:underline}
 footer .flist a:hover{color:var(--pink)}
 footer .flist svg{color:var(--pink);flex-shrink:0}
 footer .brandline{display:flex;align-items:center;gap:12px;margin-bottom:14px}
@@ -235,8 +234,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
     <img src="assets/logo-uto-white.png" alt="UTO Event">
   </a>
   <div class="links">
-    <a href="#tickets" data-i18n="n_tickets">บัตร &amp; กิจกรรม</a>
-    <a href="#schedule" data-i18n="n_sched">ตารางเวลา</a>
+    <a href="#tickets" data-i18n="n_tickets">กิจกรรม</a>
     <a href="#rules" data-i18n="n_rules">กติกา</a>
     <a href="#artist" data-i18n="n_artist">ศิลปิน</a>
     <a href="#contact" data-i18n="n_contact">ติดต่อ</a>
@@ -405,7 +403,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
           <div class="meta">
             <div class="row"><span class="k" data-i18n="l_pickup">รับสินค้า</span><span class="v" data-i18n="a4_pickup">11 ต.ค. — Avani Sukhumvit ชั้น 7 (13:00–17:00) หรือ 10 ต.ค. — ที่ Cherchan Studio เฉพาะผู้มีบัตร Photo Session ตามรอบที่ซื้อ</span></div>
           </div>
-          <div class="small-note" data-i18n="a4_ship">กรณีไม่สามารถมารับด้วยตัวเอง มีค่าใช้จ่ายในการส่งไปรษณีย์เพิ่มเติม — ติดต่อ SNS inbox หรือ <a href="mailto:utoeventbkk@gmail.com" target="_blank" rel="noopener" style="text-decoration:underline">utoeventbkk@gmail.com</a></div>
+          <div class="small-note" data-i18n="a4_ship">กรณีไม่สามารถมารับด้วยตัวเอง มีค่าใช้จ่ายในการส่งไปรษณีย์เพิ่มเติม — ติดต่อ SNS inbox หรือ —</div>
         </div>
         <div class="foot">
           <span class="price-big">1,000 <small>THB</small></span>
@@ -505,7 +503,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
       <div>
         <h4 data-i18n="f_contact">ติดต่อ</h4>
         <div class="flist">
-          <a href="mailto:utoeventbkk@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>utoeventbkk@gmail.com</a>
+          <span style="display:inline-flex;align-items:center;gap:9px;font-weight:600;opacity:.55"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>—</span>
           <a href="https://www.instagram.com/utoevent/" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>Instagram @utoevent</a>
           <a href="https://web.facebook.com/utoevent" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>Facebook utoevent</a>
         </div>
@@ -530,7 +528,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
 <script>
 const I18N = {
 en: {
-  "n_tickets":"Tickets & Activities","n_sched":"Schedule","n_rules":"Rules","n_artist":"Artist","n_contact":"Contact","n_buy":"Buy Tickets",
+  "n_tickets":"Activities","n_rules":"Rules","n_artist":"Artist","n_contact":"Contact","n_buy":"Buy Tickets",
   "h_date":"October 10–11, 2026","h_venue":"Avani Sukhumvit Bangkok, 7F",
   "h_tag":"Rei Kamiki's first solo event in Thailand — the star Thai fans have long been waiting for",
   "h_cta1":"Buy Tickets","h_cta2":"See Tickets & Activities",
@@ -557,7 +555,7 @@ en: {
   "a4_sign":"Artist's signature","a4_name":"Your name (EN / JP)",
   "a4_pool":"This item counts toward the combined total for Rei Kamiki's Meet & Greet eligibility",
   "a4_pickup":"Oct 11 — Avani Sukhumvit 7F (13:00–17:00), or Oct 10 at Cherchan Studio — only for Photo Session ticket holders of the round purchased",
-  "a4_ship":"If you cannot pick it up in person, additional postal shipping applies — contact SNS inbox or <a href=\"mailto:utoeventbkk@gmail.com\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline\">utoeventbkk@gmail.com</a>",
+  "a4_ship":"If you cannot pick it up in person, additional postal shipping applies — contact SNS inbox or —",
   "s_kicker":"Schedule","s_title":"Two days of activities",
   "s_d1":"Oct 10","s_d1t":"Saturday — Cherchan Studio + Special Dinner","s_d2":"Oct 11","s_d2t":"Sunday — Avani Sukhumvit 7F",
   "s_r1":"Photo Session Round 1 — Sexy Sleepwear","s_where1":"Cherchan Studio Ramintra (Ramintra 65)","s_r2":"Photo Session Round 2 — Bikini","s_r3":"Photo Session Round 3 — Thai Wedding Dress","s_r4":"Photo Session Round 4 — Lingerie",
@@ -582,7 +580,7 @@ en: {
   "f_src":"Ticket data and rules are based on the Ticketmelon ticket pages — always check the ticket page for the latest status"
 },
 jp: {
-  "n_tickets":"チケット＆アクティビティ","n_sched":"タイムテーブル","n_rules":"注意事項","n_artist":"アーティスト","n_contact":"お問い合わせ","n_buy":"チケット購入",
+  "n_tickets":"アクティビティ","n_rules":"注意事項","n_artist":"アーティスト","n_contact":"お問い合わせ","n_buy":"チケット購入",
   "h_date":"2026年10月10日–11日","h_venue":"アバニ・スクンビット・バンコク 7階",
   "h_tag":"神木麗（Rei Kamiki）初のタイ単独イベント — タイのファンが長年待ち望んでいた彼女が、ついにバンコクへ",
   "h_cta1":"チケット購入","h_cta2":"チケット＆アクティビティを見る",
@@ -609,7 +607,7 @@ jp: {
   "a4_sign":"アーティスト直筆サイン","a4_name":"お名入れ（EN / JP）",
   "a4_pool":"本商品は他商品との合計金額で、神木麗のミーアンドグリート参加権の対象になります",
   "a4_pickup":"10月11日 — アバニ・スクンビット7階（13:00–17:00）、または10月10日 — Cherchan Studio（フォトセッション購入回のチケットお持ちの方のみ）",
-  "a4_ship":"ご本人が受け取りできない場合、追加の郵送料がかかります — SNS inbox または <a href=\"mailto:utoeventbkk@gmail.com\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline\">utoeventbkk@gmail.com</a> までご連絡ください",
+  "a4_ship":"ご本人が受け取りできない場合、追加の郵送料がかかります — SNS inbox または — までご連絡ください",
   "s_kicker":"タイムテーブル","s_title":"2日間のスケジュール",
   "s_d1":"10/10","s_d1t":"土曜 — Cherchan Studio＋スペシャルディナー","s_d2":"10/11","s_d2t":"日曜 — アバニ・スクンビット7階",
   "s_r1":"フォトセッション1回目 — セクシーランジェリー","s_where1":"Cherchan Studio Ramintra（ラミントラ65）","s_r2":"フォトセッション2回目 — ビキニ","s_r3":"フォトセッション3回目 — タイ式ウェディングドレス","s_r4":"フォトセッション4回目 — ランジェリー",
