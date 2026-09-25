@@ -9,6 +9,7 @@
 <meta property="og:description" content="อีเวนท์เดี่ยวครั้งแรกของ Rei Kamiki ที่ไทย · 10–11 ตุลาคม 2026 · Avani Sukhumvit Bangkok · จำกัดอายุ 20 ปีขึ้นไป">
 <meta property="og:image" content="assets/kamiki-rei-hero.webp">
 <link rel="icon" type="image/png" href="assets/logo-uto-pink.png">
+<link rel="preload" as="image" href="assets/kamiki-rei-hero.webp">
 <style>
 :root{
   --pink:#E11D48; --pink-dark:#be123c; --pink-soft:#fff1f2;
@@ -47,7 +48,8 @@ a{color:inherit;text-decoration:none}
 
 /* ===== HERO (04 LDH) ===== */
 .hero{position:relative;min-height:94vh;display:flex;flex-direction:column;justify-content:flex-end;background:var(--ink);overflow:hidden}
-.hero .bg{position:absolute;inset:0;background:url('assets/kamiki-rei-hero.webp') center 22%/cover no-repeat}
+.hero .bg{position:absolute;inset:0;background:url('assets/kamiki-rei-hero.webp') center/cover no-repeat}
+.hero .ghost{position:absolute;top:6px;left:14px;z-index:1;color:rgba(255,255,255,.055);font-weight:900;font-size:clamp(5rem,13vw,12rem);line-height:.92;letter-spacing:.02em;user-select:none;pointer-events:none;white-space:nowrap}
 .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.5) 0%,rgba(13,13,15,.08) 38%,rgba(13,13,15,.45) 68%,rgba(13,13,15,.95) 100%)}
 .hero .content{position:relative;z-index:2;padding:0 22px 56px}
 .hero .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
@@ -195,6 +197,8 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
   .hero{min-height:86vh}
 }
 @media(max-width:760px){
+  .hero .bg{background-image:url('assets/kamiki-rei-hero-m.webp');background-position:55% 40%}
+  .hero .ghost{display:none}
   .sched-grid{grid-template-columns:1fr}
   .rules-grid{grid-template-columns:1fr}
   .tier{flex-wrap:wrap;row-gap:4px}
@@ -247,6 +251,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="bg" role="img" aria-label="Rei Kamiki"></div>
+  <div class="ghost" aria-hidden="true">OCTOBER<br>2026</div>
   <div class="veil"></div>
   <div class="container content">
     <div class="chips">
