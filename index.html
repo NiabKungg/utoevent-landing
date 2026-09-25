@@ -169,6 +169,7 @@ footer .cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:36px}
 footer h4{color:#fff;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:14px}
 footer .flist{display:flex;flex-direction:column;gap:9px;font-size:.92rem}
 footer .flist a{display:inline-flex;align-items:center;gap:9px;font-weight:600}
+footer .flist a[href^="mailto"]{text-decoration:underline}
 footer .flist a:hover{color:var(--pink)}
 footer .flist svg{color:var(--pink);flex-shrink:0}
 footer .brandline{display:flex;align-items:center;gap:12px;margin-bottom:14px}
@@ -311,7 +312,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
     <div class="kicker" data-i18n="t_kicker">บัตร &amp; กิจกรรม</div>
     <h2 data-i18n="t_title">เลือกกิจกรรมของคุณ</h2>
     <div class="notes">
-      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="t_note1">สถานะบัตรอัปเดต ณ 25 กันยายน 2026 — สถานะล่าสุดตรวจสอบที่หน้าบัตร Ticketmelon เสมอ</span></span>
+      <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="t_note1">สถานะบัตรอัปเดต ณ 26 กันยายน 2026 — สถานะล่าสุดตรวจสอบที่หน้าบัตร Ticketmelon เสมอ</span></span>
       <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><span data-i18n="t_note2">ราคารวมค่าธรรมเนียมการออกบัตรแล้ว</span></span>
     </div>
 
@@ -357,7 +358,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
           <div class="rounds">
             <div class="round"><span class="no" data-i18n="r_no">รอบ 1</span><span class="t">10:30–11:30</span><span class="c" data-i18n="r1_c">ชุดนอน sexy</span><span class="status st-out" data-i18n="st_out2">บัตรหมดแล้ว</span></div>
             <div class="round"><span class="no" data-i18n="r_no2">รอบ 2</span><span class="t">12:30–13:30</span><span class="c" data-i18n="r2_c">ชุดบิกินี่</span><span class="status st-out" data-i18n="st_out3">บัตรหมดแล้ว</span></div>
-            <div class="round"><span class="no" data-i18n="r_no3">รอบ 3</span><span class="t">15:00–16:00</span><span class="c" data-i18n="r3_c">ชุดแต่งงานไทย</span><span class="status st-zero" data-i18n="st_zero">คงเหลือ 0</span></div>
+            <div class="round"><span class="no" data-i18n="r_no3">รอบ 3</span><span class="t">15:00–16:00</span><span class="c" data-i18n="r3_c">ชุดแต่งงานไทย</span><span class="status st-sale" data-i18n="st_sale">เปิดจำหน่ายแล้ว</span></div>
             <div class="round"><span class="no" data-i18n="r_no4">รอบ 4</span><span class="t">17:00–18:00</span><span class="c" data-i18n="r4_c">ชุดชั้นใน</span><span class="status st-out" data-i18n="st_out4">บัตรหมดแล้ว</span></div>
           </div>
           <div class="warn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg><span data-i18n="a2_novid">ไม่สามารถบันทึกวิดีโอระหว่างกิจกรรม</span></div>
@@ -404,7 +405,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
           <div class="meta">
             <div class="row"><span class="k" data-i18n="l_pickup">รับสินค้า</span><span class="v" data-i18n="a4_pickup">11 ต.ค. — Avani Sukhumvit ชั้น 7 (13:00–17:00) หรือ 10 ต.ค. — ที่ Cherchan Studio เฉพาะผู้มีบัตร Photo Session ตามรอบที่ซื้อ</span></div>
           </div>
-          <div class="small-note" data-i18n="a4_ship">กรณีไม่สามารถมารับด้วยตัวเอง มีค่าใช้จ่ายในการส่งไปรษณีย์เพิ่มเติม — ติดต่อ SNS inbox หรือ utoeventbkk@gmail.com</div>
+          <div class="small-note" data-i18n="a4_ship">กรณีไม่สามารถมารับด้วยตัวเอง มีค่าใช้จ่ายในการส่งไปรษณีย์เพิ่มเติม — ติดต่อ SNS inbox หรือ <a href="mailto:utoeventbkk@gmail.com" target="_blank" rel="noopener" style="text-decoration:underline">utoeventbkk@gmail.com</a></div>
         </div>
         <div class="foot">
           <span class="price-big">1,000 <small>THB</small></span>
@@ -490,7 +491,6 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
       <div class="rule"><span class="n">06</span><p data-i18n="ru6">กิจกรรมอาจสิ้นสุดก่อนเวลาที่แจ้งไว้</p></div>
       <div class="rule"><span class="n">07</span><p data-i18n="ru7">สถานที่จัด Special Dinner แจ้งยืนยันทางอีเมลเท่านั้น</p></div>
     </div>
-    <div class="rules-src"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg><span data-i18n="ru_src">เงื่อนไขทั้งหมดอ้างอิงจากหน้าบัตรอย่างการบน Ticketmelon</span></div>
   </div>
 </section>
 
@@ -538,11 +538,11 @@ en: {
   "i_body":"Rei Kamiki's first solo event in Thailand — the star Thai fans have long been waiting for. Four activities in one weekend: Fan Meeting, Photo Session, Special Dinner and Wide Cheki. All tickets are sold via Ticketmelon only.",
   "f1_l":"Dates","f1_v":"October 10–11, 2026","f2_l":"Main Venue","f2_v":"Avani Sukhumvit Bangkok, 7F (Cashmere)","f3_l":"Organizer","f3_v":"UTO EVENT","f4_l":"Official Ticketing",
   "t_kicker":"Tickets & Activities","t_title":"Choose your activity",
-  "t_note1":"Ticket status updated September 25, 2026 — always check the latest status on the Ticketmelon ticket page","t_note2":"All prices include ticketing fees",
+  "t_note1":"Ticket status updated September 26, 2026 — always check the latest status on the Ticketmelon ticket page","t_note2":"All prices include ticketing fees",
   "l_date":"Date","l_venue":"Venue","l_from":"From","l_round":"round","l_pickup":"Pickup",
   "l_buy":"Buy Tickets","l_buy2":"Buy Tickets","l_buy3":"Buy Tickets","l_buy4":"Buy Tickets",
   "st_out":"Sold Out","st_out2":"Sold Out","st_out3":"Sold Out","st_out4":"Sold Out","st_out5":"Sold Out","st_out6":"Sold Out",
-  "st_sale":"On Sale","st_sale2":"On Sale","st_sale3":"On Sale","st_zero":"0 left",
+  "st_sale":"On Sale","st_sale2":"On Sale","st_sale3":"On Sale",
   "a1_tag":"Fan Meeting + Meet & Greet","a1_date":"Sunday, October 11, 2026 · 15:30–16:40",
   "a1_note":"All Fan Meeting ticket holders get access to the Meet & Greet activity according to their ticket benefits",
   "a1_svip":"Includes Fan Meeting (Oct 11) + all Photo Session rounds (Oct 10) — excludes Special Dinner",
@@ -557,7 +557,7 @@ en: {
   "a4_sign":"Artist's signature","a4_name":"Your name (EN / JP)",
   "a4_pool":"This item counts toward the combined total for Rei Kamiki's Meet & Greet eligibility",
   "a4_pickup":"Oct 11 — Avani Sukhumvit 7F (13:00–17:00), or Oct 10 at Cherchan Studio — only for Photo Session ticket holders of the round purchased",
-  "a4_ship":"If you cannot pick it up in person, additional postal shipping applies — contact SNS inbox or utoeventbkk@gmail.com",
+  "a4_ship":"If you cannot pick it up in person, additional postal shipping applies — contact SNS inbox or <a href=\"mailto:utoeventbkk@gmail.com\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline\">utoeventbkk@gmail.com</a>",
   "s_kicker":"Schedule","s_title":"Two days of activities",
   "s_d1":"Oct 10","s_d1t":"Saturday — Cherchan Studio + Special Dinner","s_d2":"Oct 11","s_d2t":"Sunday — Avani Sukhumvit 7F",
   "s_r1":"Photo Session Round 1 — Sexy Sleepwear","s_where1":"Cherchan Studio Ramintra (Ramintra 65)","s_r2":"Photo Session Round 2 — Bikini","s_r3":"Photo Session Round 3 — Thai Wedding Dress","s_r4":"Photo Session Round 4 — Lingerie",
@@ -575,7 +575,6 @@ en: {
   "ru5":"Merchandise can be purchased after registration and wristband collection",
   "ru6":"Activities may end earlier than the announced time",
   "ru7":"The Special Dinner venue is confirmed by email only",
-  "ru_src":"All conditions are based on the official ticket pages on Ticketmelon",
   "f_desc":"The organizer of Fan Meeting events in Thailand — all activity tickets are sold via Ticketmelon only",
   "f_contact":"Contact","f_tickets":"All tickets",
   "f_t1":"Fan Meeting (Oct 11)","f_t2":"Photo Session (Oct 10)","f_t3":"Special Dinner (Oct 10)","f_t4":"Wide Cheki",
@@ -591,11 +590,11 @@ jp: {
   "i_body":"神木麗（Rei Kamiki）初のタイ単独イベント。タイのファンが長年待ち望んでいた彼女が、ついにバンコクへ。ファンミーティング・フォトセッション・スペシャルディナー・ワイドチェキの4つのアクティビティ。チケットはすべてTicketmelonのみで販売します。",
   "f1_l":"開催日","f1_v":"2026年10月10日–11日","f2_l":"メイン会場","f2_v":"アバニ・スクンビット・バンコク 7階（Cashmere）","f3_l":"主催","f3_v":"UTO EVENT","f4_l":"チケット販売",
   "t_kicker":"チケット＆アクティビティ","t_title":"アクティビティを選ぶ",
-  "t_note1":"チケット状況は2026年9月25日時点 — 最新状況は必ずTicketmelonのチケットページでご確認ください","t_note2":"価格は手数料込みです",
+  "t_note1":"チケット状況は2026年9月26日時点 — 最新状況は必ずTicketmelonのチケットページでご確認ください","t_note2":"価格は手数料込みです",
   "l_date":"開催日","l_venue":"会場","l_from":"〜から","l_round":"回","l_pickup":"受け取り",
   "l_buy":"チケット購入","l_buy2":"チケット購入","l_buy3":"チケット購入","l_buy4":"チケット購入",
   "st_out":"完売","st_out2":"完売","st_out3":"完売","st_out4":"完売","st_out5":"完売","st_out6":"完売",
-  "st_sale":"販売中","st_sale2":"販売中","st_sale3":"販売中","st_zero":"残り0枚",
+  "st_sale":"販売中","st_sale2":"販売中","st_sale3":"販売中",
   "a1_tag":"ファンミ＋ミーグリ","a1_date":"10月11日（日）· 15:30–16:40",
   "a1_note":"ファンミーティングチケットをお持ちの方は、チケット特典に応じてミーアンドグリートにご参加いただけます",
   "a1_svip":"ファンミ（10/11）＋フォトセッション全回（10/10）込み（スペシャルディナーは含まれません）",
@@ -610,7 +609,7 @@ jp: {
   "a4_sign":"アーティスト直筆サイン","a4_name":"お名入れ（EN / JP）",
   "a4_pool":"本商品は他商品との合計金額で、神木麗のミーアンドグリート参加権の対象になります",
   "a4_pickup":"10月11日 — アバニ・スクンビット7階（13:00–17:00）、または10月10日 — Cherchan Studio（フォトセッション購入回のチケットお持ちの方のみ）",
-  "a4_ship":"ご本人が受け取りできない場合、追加の郵送料がかかります — SNS inbox または utoeventbkk@gmail.com までご連絡ください",
+  "a4_ship":"ご本人が受け取りできない場合、追加の郵送料がかかります — SNS inbox または <a href=\"mailto:utoeventbkk@gmail.com\" target=\"_blank\" rel=\"noopener\" style=\"text-decoration:underline\">utoeventbkk@gmail.com</a> までご連絡ください",
   "s_kicker":"タイムテーブル","s_title":"2日間のスケジュール",
   "s_d1":"10/10","s_d1t":"土曜 — Cherchan Studio＋スペシャルディナー","s_d2":"10/11","s_d2t":"日曜 — アバニ・スクンビット7階",
   "s_r1":"フォトセッション1回目 — セクシーランジェリー","s_where1":"Cherchan Studio Ramintra（ラミントラ65）","s_r2":"フォトセッション2回目 — ビキニ","s_r3":"フォトセッション3回目 — タイ式ウェディングドレス","s_r4":"フォトセッション4回目 — ランジェリー",
@@ -628,7 +627,6 @@ jp: {
   "ru5":"グッズは受付とリストバンド受け取り後にお買い求めいただけます",
   "ru6":"アクティビティは予定より早く終了する場合があります",
   "ru7":"スペシャルディナーの会場はメールのみでご案内します",
-  "ru_src":"すべての条件はTicketmelon公式チケットページに基づきます",
   "f_desc":"タイでファンミーティングを開催するオーガナイザー — チケットはすべてTicketmelonのみで販売",
   "f_contact":"お問い合わせ","f_tickets":"チケット一覧",
   "f_t1":"ファンミーティング（10/11）","f_t2":"フォトセッション（10/10）","f_t3":"スペシャルディナー（10/10）","f_t4":"ワイドチェキ",
@@ -661,9 +659,14 @@ try{
 const nav = document.getElementById('nav');
 const onScroll = ()=> nav.classList.toggle('solid', window.scrollY > 80);
 window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
-// duplicate ticker content for seamless loop
+// fill ticker with enough copies to cover any viewport (prevents the gap), even copy count for a seamless -50% loop
 const track = document.getElementById('tickerTrack');
-track.innerHTML += track.innerHTML;
+const unit = track.innerHTML;
+const unitW = track.offsetWidth || 1;
+let copies = Math.max(2, Math.ceil((innerWidth * 2) / unitW) + 2);
+if (copies % 2) copies += 1;
+track.innerHTML = unit.repeat(copies);
+track.style.animationDuration = (copies / 2 * 26) + 's';
 </script>
 </body>
 </html>
