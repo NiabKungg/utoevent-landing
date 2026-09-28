@@ -187,6 +187,8 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
   .intro-grid{grid-template-columns:1fr}
   .facts{margin-top:0;max-width:760px}
   .cards{grid-template-columns:1fr}
+  .nav .links{gap:13px}
+  .nav .links a{font-size:.82rem}
 }
 @media(max-width:960px){
   .nav .links{display:none}
@@ -234,9 +236,12 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
     <img src="assets/logo-uto-white.png" alt="UTO Event">
   </a>
   <div class="links">
-    <a href="#tickets" data-i18n="n_tickets">กิจกรรม</a>
+    <a href="#schedule" data-i18n="n_events">อีเวนต์</a>
+    <a href="#tickets" data-i18n="n_tickets">บัตร</a>
     <a href="#artist" data-i18n="n_artist">ศิลปิน</a>
-    <a href="#contact" data-i18n="n_contact">ติดต่อ</a>
+    <a href="#" data-i18n="n_read">บทความ</a>
+    <a href="#" data-i18n="n_shop">ร้านค้า</a>
+    <a href="#contact" data-i18n="n_about">เกี่ยวกับเรา</a>
   </div>
   <div class="langs" role="group" aria-label="language">
     <button data-lang="th" class="on">TH</button>
@@ -526,7 +531,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
 <script>
 const I18N = {
 en: {
-  "n_tickets":"Activities","n_artist":"Artist","n_contact":"Contact","n_buy":"Buy Tickets",
+  "n_events":"EVENTS","n_tickets":"TICKETS","n_artist":"ACTRESSES","n_read":"READ","n_shop":"SHOP","n_about":"ABOUT US","n_buy":"Buy Tickets",
   "h_date":"October 10–11, 2026","h_venue":"Avani Sukhumvit Bangkok, 7F",
   "h_tag":"Rei Kamiki's first solo event in Thailand — the star Thai fans have long been waiting for",
   "h_cta1":"Buy Tickets","h_cta2":"See Tickets & Activities",
@@ -577,7 +582,7 @@ en: {
   "f_src":"Ticket data and rules are based on the Ticketmelon ticket pages — always check the ticket page for the latest status"
 },
 jp: {
-  "n_tickets":"アクティビティ","n_artist":"アーティスト","n_contact":"お問い合わせ","n_buy":"チケット購入",
+  "n_events":"イベント","n_tickets":"チケット","n_artist":"出演者","n_read":"ブログ","n_shop":"ショップ","n_about":"私たちについて","n_buy":"チケット購入",
   "h_date":"2026年10月10日–11日","h_venue":"アバニ・スクンビット・バンコク 7階",
   "h_tag":"神木麗（Rei Kamiki）初のタイ単独イベント — タイのファンが長年待ち望んでいた彼女が、ついにバンコクへ",
   "h_cta1":"チケット購入","h_cta2":"チケット＆アクティビティを見る",
@@ -653,6 +658,8 @@ try{
 const nav = document.getElementById('nav');
 const onScroll = ()=> nav.classList.toggle('solid', window.scrollY > 80);
 window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+// placeholder nav links (READ / SHOP) — no target yet, don't jump to page top
+document.querySelectorAll('.nav .links a[href="#"]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
 // fill ticker with enough copies to cover any viewport (prevents the gap), even copy count for a seamless -50% loop
 const track = document.getElementById('tickerTrack');
 const unit = track.innerHTML;
