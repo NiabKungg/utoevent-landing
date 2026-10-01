@@ -213,9 +213,9 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
   .hero{min-height:86vh}
 }
 @media(max-width:760px){
-  .hero .bg{background-image:url('assets/kamiki-rei-hero-m.webp');background-position:55% 50%;position:relative;inset:auto;width:100%;aspect-ratio:1280/1345}
-  .hero .veil{display:none}
-  .hero{display:block;margin-top:60px;min-height:0}
+  .hero .bg{background-image:url('assets/kamiki-rei-hero-m.webp');background-size:100% auto;background-position:55% top;background-repeat:no-repeat;background-color:var(--ink)}
+  .hero .veil{display:block;background:linear-gradient(180deg,rgba(13,13,15,0) 58%,rgba(13,13,15,.55) 68%,rgba(13,13,15,.92) 80%,rgba(13,13,15,.97) 100%)}
+  .hero{display:flex;flex-direction:column;justify-content:flex-end;margin-top:60px;min-height:calc(100vw * 1.0508 + 190px)}
   .hero .ghost{display:none}
   .hero .chips{display:none}
   .hero .content{padding:24px 18px 30px}
@@ -238,7 +238,6 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
 }
 @media(max-width:480px){
   .facts{grid-template-columns:1fr}
-  .hero{min-height:0}
   .hero .content{padding:24px 16px 26px}
   .hero h1{letter-spacing:0}
   .hero .ctas .btn{flex:1;justify-content:center;padding:11px 8px;font-size:.84rem}
