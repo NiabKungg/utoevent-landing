@@ -59,7 +59,6 @@ a{color:inherit;text-decoration:none}
 /* ===== HERO (04 LDH) ===== */
 .hero{position:relative;margin-top:60px;min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:flex-end;background:var(--ink);overflow:hidden}
 .hero .bg{position:absolute;inset:0;background:url('assets/kamiki-rei-hero.webp') center/cover no-repeat}
-.hero .ghost{position:absolute;top:6px;left:14px;z-index:1;color:rgba(255,255,255,.055);font-weight:900;font-size:clamp(4rem,10vw,9rem);line-height:.92;letter-spacing:.02em;user-select:none;pointer-events:none;white-space:nowrap}
 .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.5) 0%,rgba(13,13,15,.08) 38%,rgba(13,13,15,.45) 68%,rgba(13,13,15,.95) 100%)}
 .hero .content{position:relative;z-index:2;padding:0 22px 52px}
 .hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
@@ -212,7 +211,6 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
   .hero .bg{background-image:url('assets/kamiki-rei-hero-m.webp');background-size:100% auto;background-position:55% top;background-repeat:no-repeat;background-color:var(--ink)}
   .hero .veil{display:block;background:linear-gradient(180deg,rgba(13,13,15,0) 26%,rgba(13,13,15,.45) 42%,rgba(13,13,15,.8) 58%,rgba(13,13,15,.95) 100%)}
   .hero{display:flex;flex-direction:column;justify-content:flex-end;margin-top:60px;min-height:calc(100vw * 1.0508)}
-  .hero .ghost{display:none}
   .hero .chips{display:none}
   .hero .content{padding:24px 18px 30px}
   .hero .chips{gap:8px;margin-bottom:12px}
@@ -288,7 +286,6 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
 <!-- HERO -->
 <header class="hero" id="top">
   <div class="bg" role="img" aria-label="Rei Kamiki"></div>
-  <div class="ghost" aria-hidden="true">OCTOBER<br>2026</div>
   <div class="veil"></div>
   <div class="container content">
     <div class="chips">
