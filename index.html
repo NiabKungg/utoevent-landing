@@ -59,23 +59,19 @@ a{color:inherit;text-decoration:none}
 /* ===== HERO (04 LDH) ===== */
 .hero{position:relative;margin-top:60px;min-height:calc(100vh - 60px);display:flex;flex-direction:column;justify-content:flex-end;background:var(--ink);overflow:hidden}
 .hero .bg{position:absolute;inset:0;background:url('assets/kamiki-rei-hero.webp') center/cover no-repeat}
-.hero .ghost{position:absolute;top:6px;left:14px;z-index:1;color:rgba(255,255,255,.055);font-weight:900;font-size:clamp(5rem,13vw,12rem);line-height:.92;letter-spacing:.02em;user-select:none;pointer-events:none;white-space:nowrap}
+.hero .ghost{position:absolute;top:6px;left:14px;z-index:1;color:rgba(255,255,255,.055);font-weight:900;font-size:clamp(4rem,10vw,9rem);line-height:.92;letter-spacing:.02em;user-select:none;pointer-events:none;white-space:nowrap}
 .hero .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,13,15,.5) 0%,rgba(13,13,15,.08) 38%,rgba(13,13,15,.45) 68%,rgba(13,13,15,.95) 100%)}
-.hero .content{position:relative;z-index:2;padding:0 22px 56px}
-.hero .chips{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
-.chip{display:inline-flex;align-items:center;gap:6px;font-size:.82rem;font-weight:700;padding:7px 14px;border-radius:999px;letter-spacing:.02em}
+.hero .content{position:relative;z-index:2;padding:0 22px 52px}
+.hero .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;letter-spacing:.02em}
 .chip-dark{background:rgba(13,13,15,.55);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
 .chip-pink{background:var(--pink);color:#fff}
 .chip-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.5)}
-.hero h1{color:#fff;font-size:clamp(2.6rem,10vw,8rem);font-weight:900;letter-spacing:.01em;line-height:.95;text-transform:uppercase}
-.hero .jp-name{color:rgba(255,255,255,.85);font-size:clamp(1.1rem,2.4vw,1.6rem);font-weight:700;margin-top:6px;letter-spacing:.4em}
-.hero .sub{color:#fff;font-size:clamp(1.05rem,2.6vw,1.7rem);font-weight:800;letter-spacing:.18em;margin-top:10px;text-transform:uppercase}
-.hero .tag{color:rgba(255,255,255,.8);max-width:640px;margin-top:14px;font-size:.98rem}
-.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
-.ticker{position:relative;z-index:2;background:#000;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);overflow:hidden;white-space:nowrap}
-.ticker .track{display:inline-block;padding:10px 0;animation:mq 26s linear infinite;color:var(--pink);font-weight:800;letter-spacing:.2em;font-size:.85rem}
-.ticker .track b{color:#fff;font-weight:800;margin:0 18px}
-@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.hero h1{color:#fff;font-size:clamp(2.3rem,7.5vw,5.8rem);font-weight:900;letter-spacing:.01em;line-height:.95;text-transform:uppercase}
+.hero .jp-name{color:rgba(255,255,255,.85);font-size:clamp(.95rem,1.9vw,1.25rem);font-weight:700;margin-top:5px;letter-spacing:.4em}
+.hero .sub{color:#fff;font-size:clamp(.9rem,1.9vw,1.3rem);font-weight:800;letter-spacing:.18em;margin-top:8px;text-transform:uppercase}
+.hero .tag{color:rgba(255,255,255,.8);max-width:580px;margin-top:10px;font-size:.9rem}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
 
 /* ===== SECTIONS (08 EVENTPOP) ===== */
 .sec{padding:78px 0}
@@ -220,12 +216,12 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
   .hero .chips{display:none}
   .hero .content{padding:24px 18px 30px}
   .hero .chips{gap:8px;margin-bottom:12px}
-  .hero h1{font-size:clamp(2.2rem,8.5vw,3.2rem)}
-  .hero .jp-name{font-size:.95rem;letter-spacing:.3em;margin-top:4px}
-  .hero .sub{font-size:.88rem;margin-top:6px;letter-spacing:.14em}
-  .hero .tag{font-size:.85rem;margin-top:8px;line-height:1.45}
+  .hero h1{font-size:clamp(1.9rem,7vw,2.7rem)}
+  .hero .jp-name{font-size:.8rem;letter-spacing:.3em;margin-top:4px}
+  .hero .sub{font-size:.76rem;margin-top:6px;letter-spacing:.14em}
+  .hero .tag{font-size:.8rem;margin-top:8px;line-height:1.45}
   .hero .ctas{margin-top:14px;gap:10px}
-  .hero .ctas .btn{padding:11px 14px;font-size:.85rem}
+  .hero .ctas .btn{padding:10px 13px;font-size:.8rem}
   .sched-grid{grid-template-columns:1fr}
   .rules-grid{grid-template-columns:1fr}
   .tier{flex-wrap:wrap;row-gap:4px}
@@ -306,11 +302,6 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
     <div class="ctas">
       <a class="btn btn-primary" href="https://www.ticketmelon.com/th/uto/kamiki" target="_blank" rel="noopener" data-i18n="h_cta1">ซื้อบัตร</a>
       <a class="btn btn-ghost-dark" href="#tickets" data-i18n="h_cta2">ดูบัตรและกิจกรรม</a>
-    </div>
-  </div>
-  <div class="ticker" aria-hidden="true">
-    <div class="track" id="tickerTrack">
-      <b>REI KAMIKI 1ST FAN MEETING IN BANGKOK</b> 10–11 OCT 2026 <b>AVANI SUKHUMVIT</b> TICKETMELON.COM/UTO <b>神木麗</b>
     </div>
   </div>
 </header>
@@ -620,7 +611,7 @@ en: {
   "f_src":"Ticket data and rules are based on the Ticketmelon ticket pages — always check the ticket page for the latest status"
 },
 jp: {
-  "n_events":"イベント","n_tickets":"チケット","n_artist":"出演者","n_read":"ブログ","n_shop":"ショップ","n_about":"私たちについて","n_buy":"チケット購入",
+  "n_events":"イベント","n_tickets":"チケット","n_artist":"出演者","n_read":"記事","n_shop":"ショップ","n_about":"私たちについて","n_buy":"チケット購入",
   "h_date":"2026年10月10日–11日","h_venue":"アバニ・スクンビット・バンコク 7階",
   "h_tag":"神木麗（Rei Kamiki）初のタイ単独イベント — タイのファンが長年待ち望んでいた彼女が、ついにバンコクへ",
   "h_cta1":"チケット購入","h_cta2":"チケット＆アクティビティを見る",
@@ -711,14 +702,6 @@ burger.addEventListener('click', ()=> setMenu(!mobileMenu.classList.contains('op
 mobileMenu.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=> setMenu(false)));
 document.addEventListener('click', e=>{ if(mobileMenu.classList.contains('open') && !nav.contains(e.target)) setMenu(false); });
 document.addEventListener('keydown', e=>{ if(e.key==='Escape') setMenu(false); });
-// fill ticker with enough copies to cover any viewport (prevents the gap), even copy count for a seamless -50% loop
-const track = document.getElementById('tickerTrack');
-const unit = track.innerHTML;
-const unitW = track.offsetWidth || 1;
-let copies = Math.max(2, Math.ceil((innerWidth * 2) / unitW) + 2);
-if (copies % 2) copies += 1;
-track.innerHTML = unit.repeat(copies);
-track.style.animationDuration = (copies / 2 * 26) + 's';
 </script>
 </body>
 </html>
