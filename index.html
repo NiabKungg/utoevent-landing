@@ -156,6 +156,8 @@ a{color:inherit;text-decoration:none}
 .more li{position:relative;padding-left:16px;font-size:.88rem;line-height:1.5}
 .more li::before{content:"";position:absolute;left:0;top:.5em;width:6px;height:6px;border-radius:50%;background:var(--pink)}
 .more .more-note{margin-top:10px;font-size:.78rem;color:var(--gray2)}
+.more ul + h5{margin-top:14px}
+.meta .v a{color:var(--pink);font-weight:800;text-decoration:underline;text-underline-offset:2px}
 .slot .what{cursor:pointer}
 .slot .what:hover{color:var(--pink)}
 
@@ -396,7 +398,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
         <div class="card-body">
           <div class="meta">
             <div class="row"><span class="k" data-i18n="l_date">วันที่</span><span class="v" data-i18n="a2_date">เสาร์ 10 ตุลาคม 2026 · 4 รอบ</span></div>
-            <div class="row"><span class="k" data-i18n="l_venue">สถานที่</span><span class="v">Cherchan Studio Ramintra (รามอินทรา 65) · <span data-i18n="a2_parking">มีที่จอดรถ</span></span></div>
+            <div class="row"><span class="k" data-i18n="l_venue">สถานที่</span><span class="v">Cherchan Studio Ramintra (รามอินทรา 65) · <span data-i18n="a2_parking">มีที่จอดรถ</span> · <a href="https://maps.app.goo.gl/HfqRabnsQFnzFTPT7" target="_blank" rel="noopener" data-i18n="a2_map">แผนที่</a></span></div>
           </div>
           <div class="perks"><span class="perk"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="4"/><path d="M2 21v-2a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v2"/><path d="M19 8v6M22 11h-6"/></svg>2shot ×1</span><span class="perk"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><circle cx="12" cy="11" r="3"/></svg>Cheki ×1</span><span class="perk"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/></svg>Autograph ×1</span><span class="perk" data-i18n="a2_perk">ต่อ 1 รอบ</span></div>
           <div class="rounds">
@@ -405,17 +407,36 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
             <div class="round"><span class="no" data-i18n="r_no3">รอบ 3</span><span class="t">15:00–16:00</span><span class="c" data-i18n="r3_c">ชุดแต่งงานไทย</span></div>
             <div class="round"><span class="no" data-i18n="r_no4">รอบ 4</span><span class="t">17:00–18:00</span><span class="c" data-i18n="r4_c">ชุดชั้นใน</span></div>
           </div>
-          <div class="warn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg><span data-i18n="a2_novid">ไม่สามารถบันทึกวิดีโอระหว่างกิจกรรม</span></div>
-          <div class="small-note" data-i18n="a2_reg">สามารถลงทะเบียนได้ล่วงหน้า 45 นาทีก่อนกิจกรรมเริ่มในแต่ละรอบ</div>
+          <div class="warn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><path d="M12 9v4M12 17h.01"/></svg><span data-i18n="a2_novid">ไม่อนุญาตให้บันทึกวิดีโอระหว่างกิจกรรม</span></div>
+          <div class="small-note" data-i18n="a2_reg">สามารถลงทะเบียนได้ก่อนกิจกรรมเริ่ม 45 นาที</div>
           <button class="more-btn" type="button"><span data-i18n="more_btn">รายละเอียดและข้อปฏิบัติ</span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg></button>
           <div class="more">
-            <h5 data-i18n="m_head">ข้อปฏิบัติและเงื่อนไข</h5>
+            <h5 data-i18n="m2h1">ข้อกำหนด</h5>
             <ul>
-              <li data-i18n="m2_1">ไม่สามารถบันทึกวิดีโอระหว่างกิจกรรมทุกรอบ</li>
-              <li data-i18n="m2_2">ลงทะเบียนล่วงหน้าได้ 45 นาทีก่อนเริ่มแต่ละรอบ</li>
-              <li data-i18n="m2_3">ไม่อนุญาตให้นำภาพหรือหนังสือที่ภาพเปลือยเข้าภายในงาน</li>
+              <li data-i18n="m2_1">สามารถใช้โทรศัพท์หรือกล้อง DSLR ในการถ่ายรูปได้</li>
+              <li data-i18n="m2_2">ไม่อนุญาตให้ใช้กล้องถ่ายเชกิของตัวเองในกิจกรรม</li>
+              <li data-i18n="m2_3">ไม่อนุญาตให้บันทึกวิดีโอระหว่างกิจกรรม</li>
+              <li data-i18n="m2_4">เพื่อให้กิจกรรมดำเนินไปอย่างราบรื่น กรุณาถ่ายภาพในช่วงเวลาที่ทีมงานแจ้งให้ถ่ายได้ และขอความร่วมมืองดถ่ายภาพนอกช่วงเวลาดังกล่าว</li>
+              <li data-i18n="m2_5">อีเวนท์นี้เฉพาะผู้ซื้อบัตรเท่านั้น</li>
             </ul>
-            <div class="more-note" data-i18n="m_note">ข้อปฏิบัติเพิ่มเติมเฉพาะกิจกรรมจะประกาศบนหน้านี้</div>
+            <h5 data-i18n="m2h2">การลงทะเบียน</h5>
+            <ul>
+              <li data-i18n="m2_6">กรุณาแสดง QR Code ที่ได้รับจากการซื้อบัตร เพื่อใช้สำหรับลงทะเบียนเข้างาน</li>
+              <li data-i18n="m2_7">สามารถลงทะเบียนได้ก่อนกิจกรรมเริ่ม 45 นาที</li>
+            </ul>
+            <h5 data-i18n="m2h3">การซื้อสินค้าที่ระลึก</h5>
+            <ul>
+              <li data-i18n="m2_8">กรุณาแสดง Wristband ที่ได้รับจากจุดลงทะเบียน เพื่อต่อแถวและซื้อสินค้าที่ระลึก</li>
+              <li data-i18n="m2_9">สินค้าบางรายการมีการจำกัดจำนวนการซื้อต่อท่าน สามารถสอบถามรายละเอียดเพิ่มเติมได้ ณ จุดจำหน่ายสินค้าที่ระลึก</li>
+              <li data-i18n="m2_10">สามารถชำระค่าสินค้าได้ด้วย เงินสด, QR Code และบัตรเครดิต</li>
+            </ul>
+            <h5 data-i18n="m2h4">ข้อปฏิบัติและข้อควรระวัง</h5>
+            <ul>
+              <li data-i18n="m2_11">กรุณางดสัมผัสตัวศิลปินระหว่างการถ่ายภาพคู่</li>
+              <li data-i18n="m2_12">งดการใช้แฟลช</li>
+              <li data-i18n="m2_13">ห้ามนำ ภาพถ่าย หนังสือ หรือ DVD ที่มีเนื้อหาลามกอนาจาร เข้ามาภายในงาน</li>
+              <li data-i18n="m2_14">กรุณางดนำ กระเป๋าเดินทางขนาดใหญ่หรือสิ่งของที่มีขนาดใหญ่ เข้ามาภายในบริเวณงาน</li>
+            </ul>
           </div>
         </div>
         <div class="foot">
@@ -524,13 +545,14 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:44px;padding
     <div class="kicker" data-i18n="ru_kicker">กติกาการเข้าร่วม</div>
     <h2 data-i18n="ru_title">ข้อกำหนดที่ต้องทราบ</h2>
     <div class="rules-grid">
-      <div class="rule"><span class="n">01</span><p data-i18n="ru1">ไม่อนุญาตให้นำภาพหรือหนังสือที่ภาพเปลือยเข้าภายในงานอีเวนท์</p></div>
-      <div class="rule"><span class="n">02</span><p data-i18n="ru2">ไม่สามารถบันทึกวิดีโอระหว่างกิจกรรม Photo Session</p></div>
+      <div class="rule"><span class="n">01</span><p data-i18n="ru1">ห้ามนำ ภาพถ่าย หนังสือ หรือ DVD ที่มีเนื้อหาลามกอนาจาร เข้ามาภายในงาน</p></div>
+      <div class="rule"><span class="n">02</span><p data-i18n="ru2">ไม่อนุญาตให้บันทึกวิดีโอระหว่างกิจกรรม Photo Session</p></div>
       <div class="rule"><span class="n">03</span><p data-i18n="ru3">ไม่สามารถถ่ายรูปและวิดีโอในกิจกรรม Special Dinner</p></div>
-      <div class="rule"><span class="n">04</span><p data-i18n="ru4">สามารถลงทะเบียนได้ล่วงหน้า 45 นาทีก่อนกิจกรรมเริ่มในแต่ละรอบ</p></div>
-      <div class="rule"><span class="n">05</span><p data-i18n="ru5">สามารถซื้อสินค้าที่ระลึกได้หลังจากลงทะเบียนและรับริสแบนด์แล้ว</p></div>
-      <div class="rule"><span class="n">06</span><p data-i18n="ru6">กิจกรรมอาจสิ้นสุดก่อนเวลาที่แจ้งไว้</p></div>
+      <div class="rule"><span class="n">04</span><p data-i18n="ru4">กรุณาแสดง QR Code ที่ได้รับจากการซื้อบัตร เพื่อใช้สำหรับลงทะเบียนเข้างาน และลงทะเบียนได้ก่อนกิจกรรมเริ่ม 45 นาที</p></div>
+      <div class="rule"><span class="n">05</span><p data-i18n="ru5">กรุณาแสดง Wristband ที่ได้รับจากจุดลงทะเบียน เพื่อต่อแถวและซื้อสินค้าที่ระลึก</p></div>
+      <div class="rule"><span class="n">06</span><p data-i18n="ru6">กรุณางดนำ กระเป๋าเดินทางขนาดใหญ่หรือสิ่งของที่มีขนาดใหญ่ เข้ามาภายในบริเวณงาน</p></div>
       <div class="rule"><span class="n">07</span><p data-i18n="ru7">สถานที่จัด Special Dinner แจ้งยืนยันทางอีเมลเท่านั้น</p></div>
+      <div class="rule"><span class="n">08</span><p data-i18n="ru8">กิจกรรมอาจสิ้นสุดก่อนเวลาที่แจ้งไว้</p></div>
     </div>
   </div>
 </section>
@@ -586,7 +608,7 @@ en: {
   "a1_note":"All Fan Meeting ticket holders get access to the Meet & Greet activity according to their ticket benefits",
   "a1_svip":"Includes Fan Meeting (Oct 11) + all Photo Session rounds (Oct 10) — excludes Special Dinner",
   "a1_vvip":"Fan Meeting + Meet & Greet (reg 11:30 / M&G 12:00–14:00)","a1_vip":"Fan Meeting + Meet & Greet (reg 13:00 / M&G 17:20)","a1_gold":"Fan Meeting + Meet & Greet (reg 14:00 / M&G 16:55)",
-  "a2_tag":"4 photo rounds · Saturday","a2_date":"Saturday, October 10, 2026 · 4 rounds","a2_parking":"parking available",
+  "a2_tag":"4 photo rounds · Saturday","a2_date":"Saturday, October 10, 2026 · 4 rounds","a2_parking":"parking available","a2_map":"Map",
   "a2_perk":"per round","r_no":"Round 1","r_no2":"Round 2","r_no3":"Round 3","r_no4":"Round 4",
   "r1_c":"Sexy Sleepwear","r2_c":"Bikini","r3_c":"Thai Wedding Dress","r4_c":"Lingerie",
   "a2_novid":"Video recording is not allowed during the activity","a2_reg":"Registration opens 45 minutes before each round",
@@ -606,13 +628,14 @@ en: {
   "ar_kicker":"Artist","ar_bio":"Rei Kamiki's first solo event in Thailand — the star Thai fans have long been waiting for. Three special activities: Fan Meeting, Photo Session and Special Dinner, October 10–11, 2026 in Bangkok.",
   "ar_b1":"Born December 20, 1999","ar_b2":"Height 169 cm","ar_cta":"Get tickets",
   "ru_kicker":"Participation Rules","ru_title":"What you need to know",
-  "ru1":"Nude photographs or photo books are not allowed inside the event",
+  "ru1":"Photographs, books or DVDs of explicit content are not allowed inside the event",
   "ru2":"Video recording is not allowed during the Photo Session",
   "ru3":"No photos and no videos during the Special Dinner",
-  "ru4":"Registration is available 45 minutes before each activity round begins",
-  "ru5":"Merchandise can be purchased after registration and wristband collection",
-  "ru6":"Activities may end earlier than the announced time",
+  "ru4":"Please show the QR code issued with your ticket purchase for event registration. Registration is available 45 minutes before the activity starts",
+  "ru5":"Please show the wristband received at the registration desk to join the line and purchase merchandise",
+  "ru6":"Please refrain from bringing large luggage or oversized items into the venue",
   "ru7":"The Special Dinner venue is confirmed by email only",
+  "ru8":"Activities may end earlier than the announced time",
   "f_desc":"The organizer of Fan Meeting events in Thailand",
   "f_contact":"Contact","f_tickets":"All tickets",
   "f_t1":"Fan Meeting (Oct 11)","f_t2":"Photo Session (Oct 10)","f_t3":"Special Dinner (Oct 10)",
@@ -622,9 +645,21 @@ en: {
   "m1_2":"Buy merchandise after receiving your wristband",
   "m1_3":"Meet & Greet by ticket type: SVIP / VVIP 12:00 · GOLD 16:55 · VIP 17:20",
   "m1_4":"Activities may end earlier than scheduled",
-  "m2_1":"Video recording is not allowed during any session",
-  "m2_2":"Registration opens 45 minutes before each session",
-  "m2_3":"Nude photos and photo books are not allowed inside the venue",
+  "m2h1":"Rules","m2h2":"Registration","m2h3":"Merchandise","m2h4":"Etiquette &amp; precautions",
+  "m2_1":"You may take photos with your smartphone or a DSLR camera",
+  "m2_2":"Personal instant (cheki) cameras are not allowed during the activity",
+  "m2_3":"Video recording is not allowed during the activity",
+  "m2_4":"To keep the event running smoothly, please take photos only during the times announced by the staff, and refrain from taking photos outside those times",
+  "m2_5":"This event is for ticket holders only",
+  "m2_6":"Please show the QR code issued with your ticket purchase for event registration",
+  "m2_7":"Registration is available 45 minutes before the activity starts",
+  "m2_8":"Please show the wristband received at the registration desk to join the line and purchase merchandise",
+  "m2_9":"Some merchandise items have a purchase limit per person. Please ask at the merchandise booth for details",
+  "m2_10":"Merchandise can be paid with cash, QR code payment and credit card",
+  "m2_11":"Please refrain from touching the artist during the two-shot photo session",
+  "m2_12":"No flash photography",
+  "m2_13":"Photographs, books or DVDs of explicit content are not allowed inside the venue",
+  "m2_14":"Please refrain from bringing large luggage or oversized items into the venue",
   "m3_1":"No photos or videos during the dinner",
   "m3_2":"Meet at 19:30 BTS Phrom Phong (exact venue via email)",
   "m3_3":"Activities may end earlier than scheduled"
@@ -647,7 +682,7 @@ jp: {
   "a1_note":"ファンミーティングチケットをお持ちの方は、チケット特典に応じてミーアンドグリートにご参加いただけます",
   "a1_svip":"ファンミ（10/11）＋フォトセッション全回（10/10）込み（スペシャルディナーは含まれません）",
   "a1_vvip":"ファンミ＋ミーグリ（受付11:30 / M&G 12:00–14:00）","a1_vip":"ファンミ＋ミーグリ（受付13:00 / M&G 17:20）","a1_gold":"ファンミ＋ミーグリ（受付14:00 / M&G 16:55）",
-  "a2_tag":"フォトセッション4回 · 土曜","a2_date":"10月10日（土）· 全4回","a2_parking":"駐車場あり",
+  "a2_tag":"フォトセッション4回 · 土曜","a2_date":"10月10日（土）· 全4回","a2_parking":"駐車場あり","a2_map":"地図",
   "a2_perk":"1回あたり","r_no":"1回目","r_no2":"2回目","r_no3":"3回目","r_no4":"4回目",
   "r1_c":"セクシーランジェリー","r2_c":"ビキニ","r3_c":"タイ式ウェディングドレス","r4_c":"ランジェリー",
   "a2_novid":"アクティビティ中の動画撮影はできません","a2_reg":"各回開始45分前から受付可能です",
@@ -667,13 +702,14 @@ jp: {
   "ar_kicker":"アーティスト","ar_bio":"神木麗（Rei Kamiki）初のタイ単独イベント。タイのファンが長年待ち望んでいた彼女が、ファンミーティング・フォトセッション・スペシャルディナーの3つの特別アクティビティで2026年10月10日–11日にバンコクでお会いします。",
   "ar_b1":"誕生日 1999年12月20日","ar_b2":"身長 169 cm","ar_cta":"チケット購入",
   "ru_kicker":"参加上の注意","ru_title":"ご来場前に必ずお読みください",
-  "ru1":"ヌード写真やヌード写真集の持ち込みは禁止です",
+  "ru1":"わいせつな写真・書籍・DVDの持ち込みは禁止です",
   "ru2":"フォトセッション中の動画撮影はできません",
   "ru3":"スペシャルディナー中は写真・動画の撮影ができません",
-  "ru4":"各回開始45分前から事前受付が可能です",
-  "ru5":"グッズは受付とリストバンド受け取り後にお買い求めいただけます",
-  "ru6":"アクティビティは予定より早く終了する場合があります",
+  "ru4":"受付にて、チケット購入時に発行されたQRコードをご提示ください（受付は開始45分前から可能です）",
+  "ru5":"受付でお渡しするリストバンドをご提示のうえ、整列してグッズをお買い求めください",
+  "ru6":"大型の手荷物やかさばる荷物の持ち込みはご遠慮ください",
   "ru7":"スペシャルディナーの会場はメールのみでご案内します",
+  "ru8":"アクティビティは予定より早く終了する場合があります",
   "f_desc":"タイでファンミーティングを開催するオーガナイザー",
   "f_contact":"お問い合わせ","f_tickets":"チケット一覧",
   "f_t1":"ファンミーティング（10/11）","f_t2":"フォトセッション（10/10）","f_t3":"スペシャルディナー（10/10）",
@@ -683,9 +719,21 @@ jp: {
   "m1_2":"リストバンド受取後にグッズ購入が可能",
   "m1_3":"特典会（チケット種別）: SVIP / VVIP 12:00 · GOLD 16:55 · VIP 17:20",
   "m1_4":"開催時間は予定より早く終了する場合があります",
-  "m2_1":"全セッション中の動画撮影は禁止",
-  "m2_2":"各セッション開始45分前から受付可能",
-  "m2_3":"ヌード写真集・書籍の持ち込みは禁止",
+  "m2h1":"規定","m2h2":"受付について","m2h3":"グッズ購入について","m2h4":"注意事項",
+  "m2_1":"撮影にはスマートフォンまたはデジタルカメラ（DSLR）をご利用いただけます",
+  "m2_2":"ご自身のチェキカメラの使用は禁止です",
+  "m2_3":"アクティビティ中の動画撮影は禁止です",
+  "m2_4":"イベントを円滑に進行するため、撮影はスタッフが案内する時間帯のみとし、それ以外の時間帯の撮影はご遠慮ください",
+  "m2_5":"本イベントはチケット購入者のみご参加いただけます",
+  "m2_6":"受付にて、チケット購入時に発行されたQRコードをご提示ください",
+  "m2_7":"受付は開始45分前から可能です",
+  "m2_8":"受付でお渡しするリストバンドをご提示のうえ、整列してグッズをお買い求めください",
+  "m2_9":"一部の商品にはお一人様あたりの購入数量制限があります。詳細はグッズ販売ブースにてお尋ねください",
+  "m2_10":"グッズのお支払いは現金・QRコード決済・クレジットカードがご利用いただけます",
+  "m2_11":"2ショット撮影中にアーティストに触れることはご遠慮ください",
+  "m2_12":"フラッシュ撮影はご遠慮ください",
+  "m2_13":"わいせつな写真・書籍・DVDの持ち込みは禁止です",
+  "m2_14":"大型の手荷物やかさばる荷物の持ち込みはご遠慮ください",
   "m3_1":"ディナー中の写真・動画撮影は禁止",
   "m3_2":"19:30にBTSプロンポン集合（会場はメールで通知）",
   "m3_3":"開催時間は予定より早く終了する場合があります"
